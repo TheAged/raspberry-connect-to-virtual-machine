@@ -69,6 +69,9 @@ Tailscale 提供了一種簡單且安全的方式在多個裝置之間建立覆�
 curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/$(lsb_release -cs).noarmor.gpg | sudo tee /usr/share/keyrings/tailscale-archive-keyring.gpg >/dev/null
 echo "deb [signed-by=/usr/share/keyrings/tailscale-archive-keyring.gpg] https://pkgs.tailscale.com/stable/ubuntu $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/tailscale.list
  ```
+-啟動並認證 Tailscal
+-獲取虛擬機的 Tailscale IP:
+
  ```
 sudo apt-get install tailscale -y
 sudo tailscale up
