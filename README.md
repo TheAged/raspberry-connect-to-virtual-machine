@@ -62,6 +62,19 @@ Tailscale 提供了一種簡單且安全的方式在多個裝置之間建立覆�
 
 2. **設定 Tailscale IP：**  
    - 在 `sender.py` 與 `backend_server.py` 中，確認 `SERVER_IP` (或 `vm_tailscale_ip`) 已正確設定為虛擬機的 Tailscale IP。
+  -安裝 Tailscale 客戶端:
+  -開啟終端機，執行以下命令來添加 Tailscale 的 GPG 金鑰和 APT 倉庫源。
+
+ ```
+curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/$(lsb_release -cs).noarmor.gpg | sudo tee /usr/share/keyrings/tailscale-archive-keyring.gpg >/dev/null
+echo "deb [signed-by=/usr/share/keyrings/tailscale-archive-keyring.gpg] https://pkgs.tailscale.com/stable/ubuntu $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/tailscale.list
+ ```
+ ```
+sudo apt-get install tailscale -y
+sudo tailscale up
+tailscale ip -4
+  ```
+ 
 
 3. **啟動程式：**  
    - 在樹莓派上執行 `sender.py`：  
