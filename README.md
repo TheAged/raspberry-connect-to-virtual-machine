@@ -77,14 +77,8 @@ tailscale ip -4
  
 
 3. **啟動程式：**  
-   - 在樹莓派上執行 `sender.py`：  
-     ```
-     python3 sender.py
-     ```
-   - 在虛擬機上執行 `backend_server.py`，啟動 Flask 影像串流伺服器：  
-     ```
-     python3 backend_server.py
-     ```
+
+
    - 透過瀏覽器訪問 `http://[虛擬機Tailscale IP]:5000` 以觀看即時影像。
 
 ## 結語
