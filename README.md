@@ -79,8 +79,7 @@ sudo tailscale up
 tailscale ip -4
   ```
  
-
-3. **啟動程式：**  
+**啟動程式：**  
 
    - 透過瀏覽器訪問 `http://[虛擬機Tailscale IP]:5000` 以觀看即時影像。
 
