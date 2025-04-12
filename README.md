@@ -14,8 +14,8 @@
 
 
 
-## 所用技術
 
+## 所用技術
 
 ## Python 與 OpenCV
 - **Python 3:**  
