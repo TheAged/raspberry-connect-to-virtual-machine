@@ -54,7 +54,7 @@ Tailscale 提供了一種簡單且安全的方式在多個裝置之間建立覆�
 ## 使用方法
 
 1. **環境建置：**  
-   - 確認已安裝 Python 3 與 pip。  
+   - 確認已安裝 Python 3 與 opencv,flask。  
    - 安裝所需套件：  
      ```
      pip install opencv-python flask
@@ -63,7 +63,7 @@ Tailscale 提供了一種簡單且安全的方式在多個裝置之間建立覆�
 2. **設定 Tailscale IP：**  
    - 在 `sender.py` 與 `backend_server.py` 中，確認 `SERVER_IP` (或 `vm_tailscale_ip`) 已正確設定為虛擬機的 Tailscale IP。
      
-  - 安裝 Tailscale 客戶端:
+3. **安裝 Tailscale 客戶端:**
   - 開啟終端機，執行以下命令來添加 Tailscale 的 GPG 金鑰和 APT 倉庫源。
 
  ```
